@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hero {
+    @apply w-screen min-h-screen flex justify-center items-center;
+  }
+
+  .title {
+    @apply text-2xl px-6 pb-3 font-bold border-b-2 w-full my-5;
+  }
+
+  .danger {
+    @apply bg-red-500;
+  }
+
+  .success {
+    @apply bg-green-500;
+  }
+
+  .neutral {
+    @apply bg-gray-300;
+  }
+
+  .selected {
+    @apply bg-gray-500;
+  }
+
+  .card {
+    @apply bg-white rounded-md w-1/2 text-center text-black flex justify-center items-center flex-col;
+  }
+
+  .option {
+    @apply py-1 px-2 w-3/4 my-1 rounded-md;
+  }
+
+  .btn {
+    @apply my-5 rounded-md px-3 py-1 font-bold;
+  }
+
+  .inactive-btn {
+    @apply bg-gray-200;
+  }
+  .active-btn {
+    @apply bg-sky-500;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
